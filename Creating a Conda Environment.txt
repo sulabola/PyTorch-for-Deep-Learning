@@ -1,0 +1,106 @@
+First open "Anaconda Prompt"
+
+Type: conda env list
+
+This will show environments available. If we have not created anything before, we will have the "base" environment.
+Note: "*" indicates the active environment
+
+To view the packages available in the environment type: conda list
+
+
+
+--- Create an Environment ---
+
+Let's assume we are creating an environment called "test_env"
+
+Type: conda create --name test_env
+
+Proceed ([y]/n)? y
+
+This will create a new environment
+
+We can verify this by typing: conda env list
+
+Now, in addition to "base" environment we will see "test_env" in the list. However, this is not active yet (check the "*")
+
+
+
+--- Activate an Environment ---
+
+To activate the environment type: (base) C:\Users\my_name>conda activate test_env
+
+Then: (test_env) C:\Users\my_name>
+
+To view the packages type: conda list
+
+There will be no packages as we just created this.
+
+
+
+--- Install Packages in an Environment ---
+
+Let's install some packages:
+
+(test_env) C:\Users\my_name>conda install pandas
+
+This will also install all the dependencies. Once agree it will install pandas with all the dependencies.
+
+Note: We can also install multiple packages at once: conda install pandas jupyter notebook matplotlib
+
+Now type: conda list
+
+We can see that all the packages are there now.
+
+Now the environment is ready and we can launch the jupyter notebook
+
+
+
+--- Jupyter Notebook ---
+
+Note: if it says jupyter notebook is not available, we can install it by typing "conda install jupyter notebook"
+
+Note: When we are working on jupyter notebook and we want to install a new package ("spacy"), comeback to the Anaconda Prompt and open a new window.
+
+You will in the base environment. We can change that by typing: conda activate test_env
+
+
+
+--- Deactivate an Environment ---
+
+To deactivate an environment: conda deactivate
+
+
+
+--- Delete and Environment ---
+
+To delete a environment: conda env remove --name test_env
+
+
+
+--- Issues when Installing Packages ---
+
+If you are running into any issues when installing package(s) in an environment, this may be due to some corrupted packages.
+
+In this case, we can clean the cashe: conda clean --all
+
+
+
+--- Issues When Installing Packages to a Existing Environment ---
+
+When we are installing packages to a existing environment (contain some packages already), we might get some errors regarding incompatibility.
+In that case we can install the packages using pip command: pip install transformers
+
+
+
+--- Install Packages Not Available in Default Anaconda Channel ---
+
+In some cases, needed packages are not available in the default anaconda channel.
+Then we can install them using alternative channels.
+For an example, let's assume we want to install 'vaderSentiment' package.
+This is not available through default channel. It is available in the 'conda-forge' channel.
+Then we can try the command: conda install -c conda-forge vaderSentiment.
+This channel is maintained by the community.
+
+To use the English models with spaCy, we need to install them first: python -m spacy download en_core_web_sm
+
+
