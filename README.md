@@ -28,6 +28,22 @@ This file provides basic instructions and codes to create a new environment, act
 
 ---
 
+### Chapter 1 – Crash Course (NumPy)
+
+This notebook provides a hands-on introduction to **NumPy**, the foundational library for numerical computing in Python. It focuses on building and manipulating arrays, performing vectorized operations, and understanding core functionalities that support deep learning workflows.
+
+The notebook includes practical examples covering:
+
+- Creation of NumPy arrays  
+- Array indexing and slicing  
+- Mathematical and element-wise operations  
+- Broadcasting concepts  
+- Random number generation  
+
+This chapter establishes the numerical computing foundation required for subsequent deep learning implementations in PyTorch.
+
+---
+
 ## References
 
 Jose Portilla, *PyTorch for Deep Learning with Python Bootcamp*, Udemy.  
