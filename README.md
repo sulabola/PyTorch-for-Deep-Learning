@@ -44,6 +44,22 @@ This chapter establishes the numerical computing foundation required for subsequ
 
 ---
 
+### Chapter 2 – Crash Course (Pandas)
+
+This notebook introduces **Pandas**, the primary Python library for data manipulation and analysis. It focuses on working with Series and DataFrame objects, performing data cleaning, and preparing structured datasets for machine learning and deep learning workflows.
+
+The notebook includes practical examples covering:
+
+- Creating and inspecting Series and DataFrames  
+- Data selection, filtering, and indexing  
+- Handling missing data  
+- Basic data aggregation and transformations  
+- Reading from and writing to common data formats  
+
+This chapter builds essential data wrangling skills required for preparing real-world datasets for PyTorch-based deep learning models.
+
+---
+
 ## References
 
 Jose Portilla, *PyTorch for Deep Learning with Python Bootcamp*, Udemy.  
